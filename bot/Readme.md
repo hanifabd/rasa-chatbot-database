@@ -1,4 +1,4 @@
-# Research Database Feature RASA Documentation
+# Database Feature RASA Documentation
 ## Store Chat History
 - endpoints.yml -> tracker_store
 
