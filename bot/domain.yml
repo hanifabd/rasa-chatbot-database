@@ -1,0 +1,56 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - register_admin
+
+actions:
+  - action_register_admin
+
+entities:
+  - ENT_USERNAME
+
+slots:
+  ENT_USERNAME:
+    type: text
+    auto_fill: false
+    influence_conversation: true
+
+forms:
+  registration_form:
+    required_slots:
+      ENT_USERNAME:
+        - type: from_text
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_username:
+  - text: "What is the username that you want to use?"
+
+session_config:
+  session_expiration_time: 1
+  carry_over_slots_to_new_session: true

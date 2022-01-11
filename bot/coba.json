@@ -1,0 +1,41 @@
+{
+    "event": "user", 
+    "timestamp": 1641799284.6027834, 
+    "text": "adminbandel", 
+    "parse_data": {
+        "intent": {
+            "id": -4335465970911551414, 
+            "name": "register_admin", 
+            "confidence": 0.9874059557914734
+        }, 
+        "entities": [], 
+        "text": "adminbandel", 
+        "message_id": "ad640d80697247618000dda2e9297e45", 
+        "metadata": {}, 
+        "intent_ranking": [
+            {
+                "id": -4335465970911551414, 
+                "name": "register_admin", 
+                "confidence": 0.9874059557914734
+            }
+        ], 
+        "response_selector": {
+            "all_retrieval_intents": [], 
+            "default": {
+                "response": {
+                    "id": null, 
+                    "responses": null, 
+                    "response_templates": null, 
+                    "confidence": 0.0, 
+                    "intent_response_key": null, 
+                    "utter_action": "utter_None", 
+                    "template_name": "utter_None"
+                }, 
+                "ranking": []
+            }
+        }
+    }, 
+    "input_channel": "rest", 
+    "message_id": "ad640d80697247618000dda2e9297e45", 
+    "metadata": {}
+}
